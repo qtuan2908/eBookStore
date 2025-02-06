@@ -1,6 +1,6 @@
 package com.aptech.ebookstore.dao;
 
-import model.Customer;
+import com.aptech.ebookstore.model.Customer;
 
 import java.sql.*;
 
