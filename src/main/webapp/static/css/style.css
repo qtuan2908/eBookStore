@@ -1,0 +1,70 @@
+.navbar .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar .form-inline input {
+    width: 300px;
+}
+/* Thay đổi màu navbar thành xanh biển */
+.bg-primary {
+    background-color: #EA6C80 !important;
+}
+.bg-primary .nav-link {
+    color: snow !important;
+}
+
+/* Tùy chỉnh khoảng cách giữa các nút */
+.navbar .btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+/* Căn chỉnh badge cho đúng vị trí */
+.navbar .btn .badge {
+    font-size: 0.75rem;
+    top: -5px;
+    transform: translate(-50%, 0);
+}
+/* Hiệu ứng chuyển động mượt */
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+/*.dropdown-item:active,*/
+/*.dropdown-item:focus {*/
+/*    background-color: #d32f2f !important; !* Màu đỏ khi click *!*/
+/*    color: white !important;*/
+/*}*/
+
+/* Đổi màu khi hover vào từng mục */
+.dropdown-item:hover {
+    background-color: #FCB4B4 !important; /* Màu cam khi hover */
+    color: black !important;
+}
+
+/* Tăng kích thước menu cho wishlist và giỏ hàng */
+#wishlistDropdown .dropdown-menu,
+#cartDropdown .dropdown-menu {
+    min-width: 400px !important;
+    max-width: 500px !important; /* Thiết lập chiều rộng tối đa */
+}
+
+.dropdown-menu {
+    min-width: 250px;
+    max-width: 350px;
+}
+
+/* Canh chỉnh bảng trong dropdown */
+.dropdown-menu table {
+    width: 100%;
+}
+
+/* Đồng nhất màu hover của dropdown trong input group */
+.input-group .dropdown-item:hover {
+    background-color: #FCB4B4 !important;
+    color: black !important;
+}
+
+a {
+    text-decoration: none;
+}
