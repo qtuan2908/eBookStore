@@ -14,7 +14,6 @@
 * Nhắc lại là luôn luôn phải pull project mỗi ngày và thực hiện code. Code xong phải báo lên nhóm để cho mọi người cùng pull về
 
 ## 3. Cấu trúc thư mục chung:
-![image](https://github.com/user-attachments/assets/e546454a-a17f-4538-87c5-9805c04c7228)
 
 ## 4. Hình ảnh icon chung
 * [Link Font Awsome icon](https://fontawesome.com/icons)
