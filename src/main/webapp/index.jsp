@@ -1,12 +1,24 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <title>JSP - Hello World</title>
+    <title>Hanoi Aptech Bookstore</title>
+    <%@ include file="/views/includes/frame.jsp" %> <!-- Import frame.jsp chứa các link CSS/JS -->
 </head>
 <body>
-<h1><%= "Hello World!" %></h1>
-<br/>
-<a href="hello-servlet">Hello Servlet</a>
+<%-- Trang header --%>
+<jsp:include page="/views/partials/header.jsp" />
+
+<%-- Carousel (nếu có) --%>
+<jsp:include page="/views/partials/carousel.jsp" />
+
+<a href="register.jsp">Đăng ký</a>
+
+<%-- Thân trang --%>
+<br>
+<jsp:include page="/views/partials/body.jsp" />
+<br>
+
+<%-- Trang footer --%>
+<jsp:include page="/views/partials/footer.jsp" />
 </body>
 </html>
