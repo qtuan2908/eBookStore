@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: qtuan
-  Date: 07/02/2025
-  Time: 9:23 CH
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+          crossorigin="anonymous">
 </head>
 
 <body>
@@ -29,14 +24,9 @@
                     <label for="category" class="form-label">Select Category</label>
                     <select id="category" class="form-select">
                         <option value="">Select a category</option>
-                        <optgroup label="Category 1"> Tên category (Vòng lặp)
-                            <option value="1.1">SubCategory 1.1</option> Các subcategory của category cha (Vòng lawjp)
-                            <option value="1.2">SubCategory 1.2</option>
-                        </optgroup>
-                        <optgroup label="Category 2">
-                            <option value="2.1">SubCategory 2.1</option>
-                            <option value="2.2">SubCategory 2.2</option>
-                        </optgroup>
+                        <c:forEach var="category" items="${categories}">
+                            <option value="${category.id}">${category.name}</option>
+                        </c:forEach>
                     </select>
                 </div>
             </form>
