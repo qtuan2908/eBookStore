@@ -1,12 +1,9 @@
 package com.aptech.ebookstore.model;
 
-import java.util.List;
-
-public class Category {
+public class SubCategory {
     private int id;
     private String name;
     private String description;
-    private List<SubCategory> subCategories;
 
     public int getId() {
         return id;
@@ -32,21 +29,12 @@ public class Category {
         this.description = description;
     }
 
-    public List<SubCategory> getSubCategories() {
-        return subCategories;
-    }
-
-    public void setSubCategories(List<SubCategory> subCategories) {
-        this.subCategories = subCategories;
-    }
-
-    public Category(int id, String name, String description, List<SubCategory> subCategories) {
+    public SubCategory(int id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.subCategories = subCategories;
     }
 
-    public Category() {
+    public SubCategory() {
     }
 }

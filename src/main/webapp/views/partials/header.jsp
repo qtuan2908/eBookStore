@@ -25,15 +25,17 @@
                         <!-- Tìm kiếm -->
                         <form class="d-none d-lg-flex mx-auto" style=" width: 50%; ">
                             <div class="input-group">
-                                <select class="form-select" aria-label="Default select example"
-                                    style="width: auto; min-width: 100px;">
+                                <select class="form-select" aria-label="Default select example" style="width: auto; min-width: 100px;">
                                     <option selected>Tất cả danh mục</option>
-                                    <option value="1">Sách</option>
-                                    <option value="2">Văn phòng phẩm</option>
-                                    <option value="3">Đồ chơi</option>
+                                    <c:forEach var="category" items="${categories}">
+                                        <optgroup label="${category.name}">
+                                            <c:forEach var="subCategory" items="${category.subCategories}">
+                                                <option value="${subCategory.id}">${subCategory.name}</option>
+                                            </c:forEach>
+                                        </optgroup>
+                                    </c:forEach>
                                 </select>
-                                <input class="form-control" type="search" placeholder="Tìm kiếm sách..."
-                                    aria-label="Search" style="width: 60%;">
+                                <input class="form-control" type="search" placeholder="Tìm kiếm sách..." aria-label="Search" style="width: 60%;">
                                 <button class="btn btn-outline-primary" type="submit">
                                     <i class="fas fa-search"></i>
                                 </button>
