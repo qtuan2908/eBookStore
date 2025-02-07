@@ -12,6 +12,7 @@
 <jsp:include page="/views/partials/carousel.jsp" />
 
 <a href="register.jsp">Đăng ký</a>
+<a href="category.jsp">Category</a>
 
 <%-- Thân trang --%>
 <br>
