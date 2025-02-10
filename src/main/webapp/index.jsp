@@ -12,7 +12,6 @@
 <jsp:include page="/views/partials/carousel.jsp" />
 
 <a href="register.jsp">Đăng ký</a>
-<a href="category.jsp">Category</a>
 <a href="dbconnecttest.jsp">Test con</a>
 
 <%-- Thân trang --%>

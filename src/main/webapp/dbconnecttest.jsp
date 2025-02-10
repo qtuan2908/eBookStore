@@ -13,13 +13,13 @@
     Connection conn = null;
     String message = "";
     try {
-        Class.forName("com.mysql.cj.jdbc.Driver");
+        Class.forName("com.mysql.jdbc.Driver");
         conn = DriverManager.getConnection(url, username, password);
         message = "Database connection successful!";
     } catch (SQLException e) {
         message = "Error: Unable to connect to the database. " + e.getMessage();
-    } catch (ClassNotFoundException e) {
-        message = "Error: JDBC Driver not found. " + e.getMessage();
+    } catch(ClassNotFoundException e){
+            message = "Error: JDBC Driver not found. " + e.getMessage();
     } finally {
         if (conn != null) {
             try {

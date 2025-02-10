@@ -24,6 +24,6 @@ public class CategoryController extends HttpServlet {
             throws ServletException, IOException {
         List<Category> categories = categoryDao.getAllCategories();
         request.setAttribute("categories", categories);
-        request.getRequestDispatcher("/category.jsp").forward(request, response);
+        request.getRequestDispatcher("views/header.jsp").forward(request, response);
     }
 }
